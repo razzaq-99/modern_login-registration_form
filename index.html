@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="hero">
+      <div class="form-box">
+        <div class="button-box">
+          <div id="btn"></div>
+          <button type="button" class="toggle-btn" onclick="login()">
+            Log In
+          </button>
+          <button type="button" class="toggle-btn" onclick="register()">
+            Register
+          </button>
+        </div>
+        <div class="icons">
+          <img src="fb.png" />
+          <img src="gp.png" />
+          <img src="tw.png" />
+        </div>
+        <form id="login" class="input-group">
+          <input
+            type="text"
+            class="input-field"
+            placeholder="User id"
+            required
+          />
+          <input
+            type="text"
+            class="input-field"
+            placeholder="Enter password"
+            required
+          />
+          <input type="checkbox" class="check-box" /><span
+            >Remember password</span
+          >
+          <button type="submit" class="submit-btn">login</button>
+        </form>
+
+        <form id="register" class="input-group">
+          <input
+            type="text"
+            class="input-field"
+            placeholder="User id"
+            required
+          />
+          <input
+            type="email"
+            class="input-field"
+            placeholder="Email id"
+            required
+          />
+          <input
+            type="text"
+            class="input-field"
+            placeholder="Enter password"
+            required
+          />
+          <input type="checkbox" class="check-box" /><span
+            >I agree the terms & conditions</span
+          >
+          <button type="submit" class="submit-btn">Register</button>
+        </form>
+      </div>
+    </div>
+    <script>
+      var x = document.getElementById("login");
+      var y = document.getElementById("register");
+      var z = document.getElementById("btn");
+
+      function register() {
+        x.style.left = "-370px";
+        y.style.left = "+15px";
+        z.style.left = "110";
+      }
+
+      function login() {
+        x.style.left = "+15px";
+        y.style.left = "-370px";
+        z.style.left = "0";
+      }
+    </script>
+  </body>
+</html>
